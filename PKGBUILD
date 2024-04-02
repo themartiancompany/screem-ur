@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: AGPL-3.0
+#
+# Maintainer: Truocolo <truocolo@aol.com>
 # Mantainer: Pellegrino Prevete <pellegrinoprevete@gmail.com>
 # Contributor: Roberto Carvajal <roberto@archlinux.org>
 # Contributor: Kritoke <typeolinux@yahoo.com>
@@ -56,3 +59,5 @@ package() {
   gconf-merge-schema ${pkgdir}/usr/share/gconf/schemas/${pkgname}.schemas --domain screem ${pkgdir}/etc/gconf/schemas/*.schemas || return 1
   rm -f ${pkgdir}/etc/gconf/schemas/*.schemas
 }
+
+# vim:set sw=2 sts=-1 et:
